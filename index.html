@@ -1,3 +1,274 @@
+昨天 8:16
+deirdre-mulhern-assignment-2 (1).pdf
+PDF
+christina-gonzales-appliedassn-2-review.pdf
+PDF
+krish-chaudhary-assignment-2.pdf
+PDF
+wei-liu-assignment-2.pdf
+PDF
+注意：这些example并不代表他们完全正确或者是高分答案，只是给你一个例子。按照你对课程和rubric的了解完成这个assignment
+test-reading-olympics-list-copy.pdf
+PDF
+
+不对。按照以下修改：
+
+application version 1 and evidences 应该先有一个类似“You are an instructional designer and web application developer. Create a browser-based Reading Olympics book recommendation app for fourth and fifth grade students who are nine to eleven years in age. The app should be titled, “Reading Olympics Book Recommender”. The purpose is to identify two possible book suggestions from the defined Reading Olympics list that match the students’ reading preferences. Include an upload button where students may upload the current Reading Olympic book list for their grade level. Include input fields, a file upload area, a “Generate My Book List” button, “Try Again” regeneration button that keeps user input but regenerates to look for other possible matches. Also include a “Start Over” button allowing the user to clear all input and enter new input. Create a “Confirm My List” button which leads to showing a “Download PDF” button. The interaction workflow would begin with entry of input. Then, the user will press the “Generate My List” button which will produce a list of 2 book recommendations with explanations for the recommendations based on the user’s preferences from the input. The user can either choose to press a button to “Try Again ” regenerating a new list of possible or they may press the “Start Over” button to clear all input, enter new or different input and ultimately generate a new list. When the user is satisfied with their list they may press a “Confirm My List” button which will then show a “Download PDF” button where they may download their recommended list. Each input should contain instructions to guide the user in how to enter their input. The app should collect the following inputs: preferred genre (adventure, humor, nonfiction, horror, realistic fiction, historical fiction, fantasy, biography), preferred format (chapter book, graphic novel, poetry, picture book), favorite author, recent favorite book or books, prefer nonfiction or fiction, book length (short, medium, longer, no preference), what they want to avoid in a book. Do not invent missing information. Only recommend titles that are from the supplied book list. You may use information from the supplied book list or reputable sources to identify more information about the books. If information is missing or insufficient to make the recommendation, do not include it in the recommended list. If a student selects a button that does not follow the interaction workflow, send an error message guiding them to the next step in the workflow. If a match cannot be made based on the supplied input, ask the user to enter more information of preferences. Return one complete HTML file with embedded CSS and JavaScript that can run directly in a web browser. ”的prompt，确认这个prompt里不会提到version2，并且大体走向类似于这个
+同时应该有类似这样的test file/chart （文件“test-reading-olympics...")，一段话解释（类似“I tested Version 1 using a Grade 5 decimal estimation lesson. The grade-level objective was for students to use place value and rounding to estimate decimal sums and differences and determine whether an estimate is reasonable. I entered a five-question Quick Check and six students with intentionally varied response patterns so that students with the same score did not necessarily miss the same questions. I then used the application to analyze the evidence and determine whether it could help me identify possible skill-based instructional needs and form a flexible small group. ”）以及相应的test data
+应该有一段“User Input: Book preferences were entered with some intentionally left blank. Inputs for trials included: Trial 1: Some preferences left blank ● Preferred genre: Fantasy ● Preferred format: Chapter Book ● Favorite author: Left blank ● Recent favorite book: Left blank ● Fiction/nonfiction preference: Fiction ● Book length: No Preference ● What to avoid: Left blank Trial 2: All preferences completed ● Preferred genres: Humor and Realistic Fiction ● Preferred formats: Graphic Novel and Picture Book ● Favorite author: Kate DiCamillo ● Recent favorite book: The Wild Robot ● Fiction/nonfiction preference: Fiction ● Book length: No Preference ● What to avoid: War Trial 3: Some completed fields while others used irrelevant or nonsense entries ● Preferred genre: Adventure ● Preferred format: Picture Book ● Favorite author: “lol” ● Recent favorite book: Left blank ● Fiction/nonfiction preference: Left blank ”，随后对于每个user input我会附上version1的run的截图并批注例如（“On the first trial, a list with two books from the uploaded list was generated with supporting explanations. All buttons are present as expected. Book preferences match given preferences. ”， “When using the “Try Again” button to obtain new matches, a message to the user appears stating the list may not contain enough different matches to generate new matches so some titles may repeat. Matches appear reasonable for the given preferences. ”， “When using the “Start Over” button, preferences are cleared with a confirmation message. ”， “Input 2: All Fields Completed When entering new preferences, the app observes the instruction to avoid a specific topic and generates a new list. All matches appear reasonable for the given preferences. ”， “When confirming the list, the download button appears as expected. ”， “When pressing the download button, a PDF can be printed or downloaded but the PDF download is not automatic. ”， “Input 3: Incomplete or Unexpected Input. This input was able to generate matches despite unexpected input. For this case, the matches are considered unreasonable because there is not enough information from the user to generate appropriate matches. ”）
+对于“Review of Application Version 1 and Identified Problems ”，填一段话，例如“Version 1 was successful in completing the main tasks but revisions could be made to make Version 2 more appropriate for independent student use with regard to usability and accessibility, educational interaction, and input-handling design choices. In terms of usability, users must upload the Reading Olympics list each time they complete a new search which is unnecessary. For students, this could be frustrating and impractical, requiring the student to select the correct CSV each time.The next version could remove this unnecessary task by embedding the book list without requiring additional uploads or give the option to select a list using a button. The design could also benefit from a progress bar that tells the user when the list is finished generating. Additionally, when pressing the download PDF button, the file should instantly download. Accessibility can be improved by differentiating purposes of the “Start Over” and “Try Again” buttons. Choices may be further improved by well-placed, clean images to aid users who may need reading support. Additionally, other graphic cues could be added to lead to the next input field. The app also needs to be accessible with only a keyboard. The goal of generating accurate recommendations from this list was achieved, however, the explanations for the recommendations were lackluster and repetitive which may not achieve the goal of the educational interaction. Explanations generally restated the selected preferences and lacked depth. The target audience of fourth- and fifth-graders would benefit from more engaging age-appropriate explanations of the recommendations. When students provide limited information, no prompt appears encouraging them to complete additional fields, potentially resulting in a less accurate match. Additionally, a new constraint in the form of an error message with guidance should be added to address unexpected or inappropriate input into free-text fields in the next version. ”，或者”Review of Version 1 I tested Version 1 using the same representative Grade 5 Quick Check task and reviewed the application from the perspective of how I would actually use it when planning small-group instruction. Overall, the application functioned as intended, but testing revealed several areas where the design was not yet supporting the quick, skill-based instructional decision making I was aiming for. Educational Interaction and Usability: The most significant issue was the Evidence Review. The application organized the results primarily around the questions students missed rather than the skills I may need to address instructionally. Although it identified useful patterns and possible instructional needs, I still had to read across several text-heavy columns and interpret the information before deciding which students might benefit from working together. In practice, I need to be able to see the possible skill need, the students showing evidence of that need, and a brief instructional activity at a glance. The current design adds an additional layer of interpretation rather than reducing the planning work. Usability and Information Prioritization: I also found that the Lesson Snapshot used valuable screen space without providing information that helped me make my next instructional decision. Information such as the grade level, number of questions, and number of students was already available elsewhere on the screen. A more useful snapshot would summarize the possible skill needs or instructional patterns emerging from the student evidence so that I can quickly see where support may be needed. Functionality and Teacher Decision Making: Version 1 preserves teacher control by allowing me to select students for a group, which is important to me. However, after the analysis, I still had to synthesize the individual student information and construct the groups myself. I would like the application to provide suggested skill-based groupings based on overlapping evidence, along with the possible instructional focus and a brief activity. I could then review the suggestion, add or remove students, and adjust the instructional focus before creating the plan. This would provide more meaningful decision support without allowing the application to make the final grouping decision for me. I also reviewed Version 1 for accessibility and input handling rather than assuming that a visually clean interface was automatically accessible. The application uses visible labels, readable text, and recognizable controls, and information is not communicated through color alone. However, keyboard navigation, focus order, and focus visibility still need to be verified through direct testing. I will also test missing or incomplete input to determine whether the application provides a clear error message, identifies what needs to be corrected, and preserves previously entered information. These checks are important because the application needs to remain efficient even when a user makes an error or uses it differently than expected. The highest-priority issue for revision is the Evidence Review: Version 2 should shift from a question-centered, text-heavy display to a more concise, skill-centered view that helps me move quickly from student evidence → possible skill need → flexible group → instructional response, while still keeping the final instructional decision with the teacher. “
+对于”Revised Application Version 2 “，给出version2 的prompt，highlight相对于prompt version1改动的地方，然后给出例如”All inputs from Version 1 were retested in Version 2 and outcomes are demonstrated below when
+addressing the elements targeted for improvement.
+Original Requirement Change:
+The original requirements included a book list to be uploaded by the student and permitted reputable
+outside sources to be used. These requirements were revised for Version 2. The list is now
+embedded and recommendations only come from supplied metadata.
+Evidence
+Embedded Book
+List
+Appearance &
+Clarity of Buttons
+Area
+Usability
+Usability
+Version 1 Issue
+Students had to upload
+the Reading Olympics
+book list each time
+they used the
+application.
+The purposes of “Try
+Again” and “Start Over”
+were not immediately
+clear.
+Version 2
+Improvement
+The book-list data was
+embedded directly into
+the application,
+eliminating the upload
+requirement.
+Buttons were visually
+differentiated and
+included clearer
+descriptions and visual
+cues.
+Purpose / Impact
+Simplifies the process
+and potential
+frustration for
+students.
+Helps students
+understand what each
+button will do before
+selecting it and
+supports independent
+use.
+Accessibility
+Version 1 had
+Accessibility
+Improvements
+More Engaging
+Book
+Recommendations
+Error & Unexpected
+Input Handling
+PDF Download
+limitations related to
+keyboard and
+screen-reader
+accessibility, visual
+guidance, and error
+handling.
+Recommendation
+explanations were
+Learning /
+Educational
+Interaction
+Usability / Input
+Validation
+Usability
+repetitive and primarily
+restated selected
+preferences.
+Nonsense or irrelevant
+entries such as “lol”
+and “idk” could be
+accepted and
+recommendations were
+still generated.
+The PDF button
+opened print/save
+options instead of
+automatically
+downloading the
+recommendation list.
+Version 2 improved
+keyboard and
+screen-reader
+accessibility,
+instructions, contrast,
+visuals, and error
+handling. The error
+message was also
+made programmatically
+focusable.
+Recommendations
+included more
+meaningful information
+from the supplied
+metadata and clearer
+explanations of how
+each book matched
+student preferences.
+Version 2 identifies
+irrelevant or nonsense
+input and provides
+student-friendly
+guidance and examples
+for correcting it.
+Version 2 automatically
+downloads the PDF.
+Makes the application
+more accessible to
+students with different
+abilities and those
+using assistive
+technology.
+Provides students
+with more useful
+information to support
+an informed and
+engaging book
+choice.
+Reduces unsupported
+matches and helps
+students provide more
+useful input.
+Creates a simpler and
+more streamlined
+interaction for fourth-
+and fifth-grade
+students.
+Preference
+Requirements
+Usability / Input
+Handling
+Recommendations
+could be generated
+with very little
+information, and there
+was no minimum
+number of required
+preferences.
+Evidence 1: Embedded Book List- Usability
+Version 2 requires at
+least four completed
+preference fields. “No
+Preference” for length
+counts as a completed
+response but does not
+influence
+recommendation
+matching.
+Provides enough
+information for more
+meaningful
+recommendations
+while recognizing “No
+Preference” as an
+intentional response.“的list，或者一段话例如”I retested the application using the same six students and Quick Check data. The revised Evidence Review was much easier for me to scan because it moved the information closer to the decision I actually needed to make: What might I need to teach, which students may need that instruction, and what could I do next? Revision/Repair Instruction 2: Small-Group Plan Scannability I continued testing the same representative task through the small-group planning step rather than stopping once the Evidence Review improved. This revealed a second usability problem. The generated 15-minute plan contained the instructional components I wanted, but some of the language was more verbose than I would want while actively teaching. The instructional focus also contained awkward wording when it combined the possible skill need with the grade-level objective. My second repair instruction focused specifically on making the final plan easier to use during instruction without removing the instructional reasoning behind it. Revision/Repair Instruction 2: When I tested Version 2 by completing the same representative task and generating a 15-minute small-group plan, I found a usability problem in the final plan. The instructional content is useful, but some sections are too wordy to scan quickly while teaching, and the instructional focus contains awkward wording when the suggested skill is combined with the grade-level objective. Revise the generated Small-Group Plan so that it is more concise and teacher-scannable while preserving its instructional content. Specifically: ● Rewrite the Instructional Focus as one concise, natural statement rather than mechanically combining the suggested skill and grade-level objective. ● Keep the structure Check → Model/Teach → Guided Practice → Grade-Level Bridge → Exit Check. ● Use short, actionable teaching directions rather than paragraph-style explanations. ● Keep sample problems and immediately usable teacher moves. ● Keep the prerequisite connection and explicit Grade-Level Bridge. ● Keep the total time within the teacher-selected instructional time. ● Preserve the Materials section and Exit Check. ● Do not remove the teacher's ability to edit the generated plan. ● Do not change the Evidence Review, skill-based grouping workflow, student-selection controls, or other Version 2 functionality. ● Do not add any new features. The goal of this repair is to make the plan something I could realistically glance at while working with a small group without reducing its instructional usefulness. I retested the same group using the same 15-minute time constraint after the repair. The revised plan was more concise and easier to scan, and the instructional focus was more natural. At the same time, the prerequisite connection, modeling, guided practice, grade-level bridge, exit check, and 15-minute time constraint were preserved. This showed me the importance of telling the LLM not only what I wanted changed, but also what I did not want the revision to disrupt. LLM-Generated Design Choices I Accepted or Revised The LLM did not independently provide me with a list of additional features or design suggestions during development. Most of the development process was driven by the instructions I provided and my evaluation of what the LLM generated. Because of this, I evaluated the LLM's generated design choices and outputs rather than selecting from suggestions it separately proposed. One generated design choice I accepted was the skill-based card format created in response to my first revision instruction. Each card presented a possible instructional need, the students with overlapping evidence, a brief explanation of why the pattern was identified, and a possible instructional activity. I kept this design because it matched the way I actually need to use the information when planning. I do not need the application to simply repeat the assessment information I just entered. I need to be able to quickly see what I may need to teach, who may need that instruction, and what I could do next. I chose to revise rather than accept the first version of the generated small-group plan. Although it included the components I had requested, it was more wordy than I would want while sitting with a group of students, and some of the generated wording was awkward. My second repair instruction was based on that evaluation. I kept the instructional structure that was working but asked the LLM to change how the information was presented. This allowed me to improve usability without adding more features or changing the purpose of the application. Instruction I Had to Clarify One instruction I had to clarify during development was what I meant by having the application support flexible grouping while preserving teacher decision making. In Version 1, the application preserved my control by showing me the evidence and allowing me to select the students myself. However, that interpretation placed too much of the synthesis back on me. I still had to determine which patterns represented similar instructional needs and then construct the groups. I clarified that I wanted the application to suggest possible skill-based groups without making the final grouping decision. The application could identify overlapping evidence and present a possible group, but I still needed to be able to review the evidence, add or remove students, edit the instructional focus, or decide not to use the suggested group at all. This clarification was important because it helped me distinguish between teacher control and teacher workload. Preserving professional judgment does not mean the application should leave all of the analysis for the teacher to complete. The more useful design was one in which the application did some of the organizational work while I remained responsible for interpreting the suggestion and making the final instructional decision. “，再给出类似”Evidence 2: Improvements to Appearance & Clarity of Buttons - Usability Version 1 buttons lacked clarity and could be incorrectly interpreted, especially ‘Try Again’ and ‘Start Over’” leading to potential confusion. Version 1 buttons’ action was explained after pressing the button. This could be confusing and frustrating to the user. Version 2 buttons clarified meaning and added visuals that were visible before selecting the buttons. This was changed to improve the user experience and avoid frustration. This is intended to support students at different ability levels by giving them a graphic that supports the meaning of the button. “， ”Evidence 4: Improving the Generated Book List to Promote Engagement- Learning Version 1 book lists generally repeated the selected preferences when giving the supporting recommendations. Though these recommendations did match the user’s requests, they did not explain the match in a way that was engaging to a fourth- or fifth-grade student. Version 2 also limited the amount of choices that could be made for each preference to one rather than multiple. This revision was done to help students narrow their choices and improve the quality of potential matches. Additionally, Version 2 states how well each recommendation matches the user’s preferences. This example is from input 2. Both versions recommend the same books however Version 2 includes more information from the description. This revision may improve the likelihood that a student may select this book. “等带有截图的evidences,最后根据version2的实际情况判断是否有limitation，有的话加上一段类似”Limitations to Address: One limitation that should be further addressed in future versions is the field where students may enter recent favorite books. This field could potentially identify a book that may happen to already appear on the embedded book list and then make a similar recommendation. However, it is likely the student may enter a book that is not contained within the embedded book list. The app may not be able to accurately use a given book title to infer metadata about the book and then correctly match it to a book from the given list. With access to a book metadata API, the app could access metadata about the book entered as input and compare it with the embedded book list metadata. “的
+对于”LLM-Assisted Development Process“，写一段类似于”The initial prompt gave the LLM the role of instructional designer with the directive to create a browser based Reading Olympics Book Recommendation application for fourth- and fifth-grade students. Required inputs, outputs, controls, and flow were described in detail. Revision/ Repair #1 Testing demonstrated that the app was successful in generating recommendations even when little information was entered. The prompt was revised using the template from module four setting that at least four preference fields must be completed before recommendations are generated. When fewer than four are entered, the app should prompt the student by asking for more information. This was further revised at the suggestion of JeepyTA to count the answer choice of “no preference” when selecting preferred book length as a completed preference rather than counting it in the same way as an empty field. Revision/ Repair #2 Testing showed that free-text fields were not evaluating nonsense or keyboard-mashing text as unacceptable input. For example, “lol” did not trigger an error message to the user and instead treated the input as preferences. The LLM was instructed to identify nonsense, irrelevant, or inappropriate entries and given examples of what these entries might look like. It was then told to produce a message guiding the user with examples of appropriate inputs. When testing input 3, the LLM rejected “idk” in the free text field and displayed corrective guidance instead of generating recommendations. This improved validation and usability. Revision/ Repair #3 and Accepted Suggestion JeepyTA’s formative feedback suggested the revision of a line of code to improve accessibility for keyboard users. The JavaScript was attempting to move focus to the error message even though the element was not focusable. JeepyTA provided an edited snippet that was then embedded into the code. This was accepted to support accessibility. Rejected Suggestion: When reviewing the prompt, the LLM suggested connecting to an LLM to use outside knowledge about the books. However, this was not accepted to avoid an LLM inventing or assuming information. Instead the prompt directed the LLM to only use the provided metadata in the embedded book list. This limitation could be addressed in future versions by using strict constraints. Clarification: The Version 1 prompt instructed users to complete as many fields as they liked. When this resulted in matches being made from very little input, the prompt was revised to direct users to enter at least four preferences. However, this direction was further clarified when the draft of Version 2 was not counting the selection of “no preference” for the book length field as one of the minimum four preferences. In this case, selecting ‘No Preference’ represents an intentional response and should count toward the four required completed fields, although it should not influence the recommendation matching. The code was revised to reflect this and allow users to enter four preferences with one being “no preference”. “，或者”The LLM did not independently provide me with a list of additional features or design suggestions during development. Most of the development process was driven by the instructions I provided and my evaluation of what the LLM generated. Because of this, I evaluated the LLM's generated design choices and outputs rather than selecting from suggestions it separately proposed. One generated design choice I accepted was the skill-based card format created in response to my first revision instruction. Each card presented a possible instructional need, the students with overlapping evidence, a brief explanation of why the pattern was identified, and a possible instructional activity. I kept this design because it matched the way I actually need to use the information when planning. I do not need the application to simply repeat the assessment information I just entered. I need to be able to quickly see what I may need to teach, who may need that instruction, and what I could do next. I chose to revise rather than accept the first version of the generated small-group plan. Although it included the components I had requested, it was more wordy than I would want while sitting with a group of students, and some of the generated wording was awkward. My second repair instruction was based on that evaluation. I kept the instructional structure that was working but asked the LLM to change how the information was presented. This allowed me to improve usability without adding more features or changing the purpose of the application. “
+最后brief reflection写一段”The LLM-assisted development process demonstrated that developing an application is a revisionary procedure requiring testing and improvement at each step. The LLM provided substantial support in writing code, saving time and effort while allowing specific changes without extensive rewriting. It helped integrate many accessibility features and identify usability issues, resulting in a better-designed application. Testing revealed that although the application appeared functional, it had usability and learner-specific issues. For example, it initially accepted nonsense answers as preferences but did not count the selection of “no preference” as a legitimate response when provided as an answer choice. LLM-assisted accessibility testing also revealed an issue for keyboard users receiving error messages while other students could receive recommendations with very little input. These shortcomings were addressed in Version 2. Overall functionality is important, but the application must be rigorously tested for usability, accessibility, and learner issues. Repairs and revisions needed to be precise and include specific evidence from testing, expected behavior, and constraints. The LLM was able to revise the identified issues and improve the user experience for Version 2. However, limitations remain. When users enter a favorite book, the application can only use that information for recommendation matching if the book also appears in the embedded list. An API call may allow the application to access reliable metadata and then match accordingly with the embedded metadata from the book list. Human judgment is essential. AI suggestions had to be evaluated for appropriateness. Some suggestions were accepted, while others were rejected or modified. Background knowledge as an educator helped guide these decisions. This application would need to be reviewed by educators and recommendations evaluated with each new list. This development process demonstrated the importance of clear prompts, the necessity of ongoing revision, and careful consideration of usability, accessibility, input validation, and learner experience. “或者”This process reinforced for me that developing an educational application with an LLM is less about getting the first prompt exactly right and more about being able to identify what is not working and explain why. Version 1 was functional, but using it as I actually would as a teacher revealed problems that were not obvious from simply looking at the application. The Evidence Review contained the information I asked for, but it still required too much interpretation. Later, the small-group plan included the instructional components I wanted but was not concise enough to use easily while teaching. The most transferable design principle for me is that every feature should reduce the distance between the evidence I already have and the instructional decision I need to make. Usability, accessibility, and input handling are part of that quality, not separate from it. A tool that requires unnecessary typing, is difficult to navigate, or produces information that takes too long to interpret creates additional work even if the output is technically correct. The application also reinforced the importance of keeping the teacher in the decision-making process. Quick Check patterns can suggest a possible instructional need, but they cannot fully explain why a student responded incorrectly. The groups and plans therefore remain starting points that require teacher observation, knowledge of the students, and professional judgment. “
+注意，所有写作的部分保持我的tone，可以有grammar错误，用最简单最简洁的语言。同时，我只需要你给我以上所有的text的内容以及code，不需要你给我创建整个文档或者获取截图
+今天 10:10
+粘贴的 markdown (1)。md(5)
+文件
+6192A2 (2).pdf
+PDF
+附件的pdf是我现在的assignment2，以下是修改建议，根据建议，直接告诉我在文档里的哪里怎么改：
+
+
+在这一行后面直接加入 Workspace：
+
+<p><strong>Available:</strong> ${materialNames.join(', ')}</p>
+<p><strong>Workspace:</strong> ${workspaceLabels[workspace.value]}</p>
+
+如果你的整个 list.innerHTML 写在同一行，可以把原来的：
+
+<p><strong>Available:</strong> ${materialNames.join(', ')}</p><p><strong>Why this set:</strong>
+
+替换成：
+
+<p><strong>Available:</strong> ${materialNames.join(', ')}</p><p><strong>Workspace:</strong> ${workspaceLabels[workspace.value]}</p><p><strong>Why this set:</strong>
+
+同时确保前面已经定义：
+
+const workspaceLabels={
+  'table-wall':'Tabletop + wall',
+  'table':'Tabletop only',
+  'wall':'Wall area only'
+};
+我没有找到<p><strong>Available:</strong> ${materialNames.join(', ')}</p>
+
+它在 render() function 里面，而且整段写在同一行，所以不容易看到。
+
+先用 Ctrl + F 搜索：
+
+materialNames.join
+
+你应该会看到类似这一整行：
+
+list.innerHTML=`<div class="summary"><p><strong>Exploration:</strong> ${escapeHtml(statement)}</p><p><strong>Available:</strong> ${materialNames.join(', ')}</p><p><strong>Why this set:</strong> Each test isolates one change and creates three comparable conditions. Interpretation stays open for your observation.</p></div>`+chosen.map((e,i)=>card(e,i,statement,documentation)).join('');
+
+把这一整行替换为：
+
+list.innerHTML=`
+  <div class="summary">
+    <p><strong>Exploration:</strong> ${escapeHtml(statement)}</p>
+    <p><strong>Available:</strong> ${materialNames.join(', ')}</p>
+    <p><strong>Workspace:</strong> ${workspaceLabels[workspace.value]}</p>
+    <p><strong>Why this set:</strong> Each test matches the confirmed materials and workspace, isolates one change, and creates three comparable conditions. Interpretation stays open for your observation.</p>
+  </div>
+` + chosen.map((e,i)=>card(e,i,statement,documentation)).join('');
+
+然后在这行附近：
+
+const labels={p5:'Laptop + p5.js',projector:'Projector',paper:'Tracing paper',thread:'Thread',wax:'Modeling wax',ink:'Ink',speakers:'Speakers'};
+
+下面加入：
+
+const workspaceLabels={
+  'table-wall':'Tabletop + wall',
+  'table':'Tabletop only',
+  'wall':'Wall area only'
+};
+
+如果连 materialNames.join 也搜索不到，说明你当前打开的可能不是 Version 2 的 index.html。可以搜索：
+
+function render()
+
+Workspace summary 必须加在这个 function 里面。
+
+修改后直接坏了，直接给我改好的version 2 的全部html code
+
+已经修好。这是完整的 Version 2 HTML，可以直接下载并替换你 GitHub repo 里的 index.html：
+
+下载完整 Version 2 HTML
+
+已验证：
+
+JavaScript syntax 正常。
+Tabletop only 会生成：
+Thread Density
+Thread Tension
+Paper Layers
+Wall area only 会生成：
+Projection Distance
+Dry Ink Opacity
+Paper Layers
+Generated summary 会显示所选 Workspace。
+不足三个相容实验时，会显示包含 materials 和 workspace 的具体错误信息。
 <!doctype html>
 <html lang="en">
 <head>
@@ -134,12 +405,8 @@
   </main>
   <footer>This tool supports student exploration. The student makes the final material and artistic decisions.</footer>
   <script>
-    const workspaceLabels={
-  'table-wall':'Tabletop + wall',
-  'table':'Tabletop only',
-  'wall':'Wall area only'
-};
     const labels={p5:'Laptop + p5.js',projector:'Projector',paper:'Tracing paper',thread:'Thread',wax:'Modeling wax',ink:'Ink',speakers:'Speakers'};
+    const workspaceLabels={'table-wall':'Tabletop + wall',table:'Tabletop only',wall:'Wall area only'};
     const emotion=document.querySelector('#emotion');
     const workspace=document.querySelector('#workspace');
     const list=document.querySelector('#experimentList');
@@ -159,27 +426,20 @@
       screenPacing:{requires:['p5','ink'],workspaces:['table-wall','table'],title:'Digital Pace and Perceived Ink Movement',q:'How does a slow digital rhythm change the perception of an already-dry ink trace?',variable:'Speed of a non-flashing p5.js transition',trials:'Static · One cycle per 6 seconds · One cycle per 3 seconds',constants:'Same dry ink sample, screen brightness, viewing distance, color palette',steps:['Prepare one dry ink trace away from the laptop.','Place it at a safe viewing distance beside the laptop screen.','Run the three slow p5.js pacing conditions.','Record perceived movement without claiming the screen physically changes the ink.'],observe:'Compare perceived direction, urgency, and continuity of the same dry trace.',tech:'Does the trace appear visually different even though the physical material stays unchanged?',emotional:'Which pace changes your reading of closeness or distance, and what makes that shift happen?',guard:'Use slow transitions only. No rapid flashing; keep all liquid away from electronics.'},
       soundContext:{requires:['speakers','thread'],workspaces:['table-wall','table'],title:'Sound Context and Material Reading',q:'How does a safe sound context change the way a static thread arrangement is perceived?',variable:'Sound condition',trials:'Silence · Low-volume steady tone · Low-volume slow pulse',constants:'Same thread arrangement, speaker position, listening time, room light',steps:['Arrange one thread line on the table and do not change it between trials.','Observe it for 30 seconds in silence.','Repeat with a quiet steady tone and then a quiet slow pulse.','Write three descriptive words after each condition.'],observe:'Compare descriptive words, perceived tension, and attention direction; do not claim physical displacement.',tech:'Did the thread physically move, or did only your perception change?',emotional:'Which sound condition changes the emotional reading most, and what stayed materially the same?',guard:'Keep volume comfortable. Sound is perceptual context, not a force used to move the material.'}
     };
-     function eligible(keys, selectedWorkspace){
-  return Object.values(experiments).filter(e =>
-    e.requires.every(r => keys.includes(r)) &&
-    e.workspaces.includes(selectedWorkspace)
-  );
-}function showErrors(errors){ errorList.innerHTML=errors.map(e=>`<li>${e}</li>`).join(''); errorSummary.classList.add('show'); errorSummary.focus(); }
+    function eligible(keys,selectedWorkspace){ return Object.values(experiments).filter(e=>e.requires.every(r=>keys.includes(r))&&e.workspaces.includes(selectedWorkspace)); }
+    function showErrors(errors){ errorList.innerHTML=errors.map(e=>`<li>${e}</li>`).join(''); errorSummary.classList.add('show'); errorSummary.focus(); }
     function render(){
       const keys=selected(), statement=emotion.value.trim(), errors=[];
       if(statement.length<10) errors.push('Describe the emotional relationship in at least a short phrase, not only one word.');
       if(keys.length<3) errors.push('Select at least three materials or tools so the tests can make useful comparisons.');
       if(keys.includes('projector')&&!keys.includes('p5')) errors.push('Select Laptop + p5.js with the projector so there is a listed digital source.');
-      const options = eligible(keys, workspace.value);
-       if(options.length<3)
-  errors.push(
-    'This material and workspace combination supports fewer than three safe tests. Try a different workspace or add tracing paper, thread, or Laptop + p5.js.'
-  );
+      const options=eligible(keys,workspace.value);
+      if(options.length<3) errors.push('This material and workspace combination supports fewer than three safe tests. Try a different workspace or add tracing paper, thread, or Laptop + p5.js.');
       if(errors.length){showErrors(errors);return;}
       errorSummary.classList.remove('show');
       const chosen=options.slice(0,3), materialNames=keys.map(k=>labels[k]);
       const documentation=docMode()==='photos'?'Take one wide photo and one close photo for each trial from fixed positions.':'Use a three-row notes table and record the same evidence categories after every trial.';
-      list.innerHTML=`<div class="summary"><p><strong>Exploration:</strong> ${escapeHtml(statement)}</p><p><strong>Available:</strong> ${materialNames.join(', ')}</p><p><strong>Workspace:</strong> ${workspaceLabels[workspace.value]}</p><p><strong>Why this set:</strong> Each test isolates one change and creates three comparable conditions. Interpretation stays open for your observation.</p></div>`+chosen.map((e,i)=>card(e,i,statement,documentation)).join('');
+      list.innerHTML=`<div class="summary"><p><strong>Exploration:</strong> ${escapeHtml(statement)}</p><p><strong>Available:</strong> ${materialNames.join(', ')}</p><p><strong>Workspace:</strong> ${workspaceLabels[workspace.value]}</p><p><strong>Why this set:</strong> Each test matches the confirmed materials and workspace, isolates one change, and creates three comparable conditions. Interpretation stays open for your observation.</p></div>`+chosen.map((e,i)=>card(e,i,statement,documentation)).join('');
       status.textContent='Three controlled experiments generated. Review constraints before making.';
       printBtn.hidden=false;
       document.querySelector('.summary').focus?.();
@@ -197,3 +457,5 @@
   </script>
 </body>
 </html>
+Alena_Sun_Emotion_to_Material_Version_2.html
+HTML

@@ -154,14 +154,18 @@
       screenPacing:{requires:['p5','ink'],title:'Digital Pace and Perceived Ink Movement',q:'How does a slow digital rhythm change the perception of an already-dry ink trace?',variable:'Speed of a non-flashing p5.js transition',trials:'Static · One cycle per 6 seconds · One cycle per 3 seconds',constants:'Same dry ink sample, screen brightness, viewing distance, color palette',steps:['Prepare one dry ink trace away from the laptop.','Place it at a safe viewing distance beside the laptop screen.','Run the three slow p5.js pacing conditions.','Record perceived movement without claiming the screen physically changes the ink.'],observe:'Compare perceived direction, urgency, and continuity of the same dry trace.',tech:'Does the trace appear visually different even though the physical material stays unchanged?',emotional:'Which pace changes your reading of closeness or distance, and what makes that shift happen?',guard:'Use slow transitions only. No rapid flashing; keep all liquid away from electronics.'},
       soundContext:{requires:['speakers','thread'],title:'Sound Context and Material Reading',q:'How does a safe sound context change the way a static thread arrangement is perceived?',variable:'Sound condition',trials:'Silence · Low-volume steady tone · Low-volume slow pulse',constants:'Same thread arrangement, speaker position, listening time, room light',steps:['Arrange one thread line on the table and do not change it between trials.','Observe it for 30 seconds in silence.','Repeat with a quiet steady tone and then a quiet slow pulse.','Write three descriptive words after each condition.'],observe:'Compare descriptive words, perceived tension, and attention direction; do not claim physical displacement.',tech:'Did the thread physically move, or did only your perception change?',emotional:'Which sound condition changes the emotional reading most, and what stayed materially the same?',guard:'Keep volume comfortable. Sound is perceptual context, not a force used to move the material.'}
     };
-    function eligible(keys){ return Object.values(experiments).filter(e=>e.requires.every(r=>keys.includes(r))); }
-    function showErrors(errors){ errorList.innerHTML=errors.map(e=>`<li>${e}</li>`).join(''); errorSummary.classList.add('show'); errorSummary.focus(); }
+     function eligible(keys, selectedWorkspace){
+  return Object.values(experiments).filter(e =>
+    e.requires.every(r => keys.includes(r)) &&
+    e.workspaces.includes(selectedWorkspace)
+  );
+}function showErrors(errors){ errorList.innerHTML=errors.map(e=>`<li>${e}</li>`).join(''); errorSummary.classList.add('show'); errorSummary.focus(); }
     function render(){
       const keys=selected(), statement=emotion.value.trim(), errors=[];
       if(statement.length<10) errors.push('Describe the emotional relationship in at least a short phrase, not only one word.');
       if(keys.length<3) errors.push('Select at least three materials or tools so the tests can make useful comparisons.');
       if(keys.includes('projector')&&!keys.includes('p5')) errors.push('Select Laptop + p5.js with the projector so there is a listed digital source.');
-      const options=eligible(keys);
+      const options = eligible(keys, workspace.value);
       if(options.length<3) errors.push('This combination supports fewer than three safe tests. Add tracing paper, thread, or Laptop + p5.js.');
       if(errors.length){showErrors(errors);return;}
       errorSummary.classList.remove('show');
